@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spott Music</title>
+    <link rel="stylesheet" href="music.css">
+</head>
+<body>
+    <div class="navbar">
+        <img src="spott_music.png" alt="Spott Music">
+        <ul>
+            <li class="item"><a href="#">Entertainment</a></li>
+            <li class="item"><a href="#">Movies</a></li>
+            <li class="item"><a href="#">Sports</a></li>
+            <li class="item"><a href="#">Premium</a></li>
+            <li><a href="#"><img src="kids.png" alt="Kids"></a></li>
+        </ul>
+            <input type="text" placeholder="Search your fav songs, albums, playlists and lot more...">
+        <div class="searchbar">
+                <button><img src="search.jpg" alt="Search"></button>
+        </div>
+        <div class="profile">
+            <img src="profile.jpg" alt="">
+        </div>
+    </div>
+    <div class="container">
+        <div class="playlist">
+            <h3>Best of NCS - No Copyright Sounds</h3>
+            <div class="songItem">
+                <img src="sleepaway.png" alt=" ">
+                <span class="songname">Sleep Away</span>
+                <span class="songplay"><span class="time">03:21</span><i id="0" class=" sip fa-regular fa-circle-play"></i></span>
+            </div>
+            <div class="songItem">
+                <img src="sleepaway.png" alt=" ">
+                <span class="songname">Indian Flute</span>
+                <span class="songplay"><span class="time">00:31</span><i id="1" class="sip fa-regular fa-circle-play"></i></span>
+            </div>
+            <div class="songItem">
+                <img src="sleepaway.png" alt=" ">
+                <span class="songname">Sleep Away</span>
+                <span class="songplay"><span class="time">03:21</span><i id="2" class="sip fa-regular fa-circle-play"></i></span>
+            </div>
+            <div class="songItem">
+                <img src="sleepaway.png" alt=" ">
+                <span class="songname">Sleep Away</span>
+                <span class="songplay"><span class="time">03:21</span><i id="3" class="sip fa-regular fa-circle-play"></i></span>
+            </div>
+            <div class="songItem">
+                <img src="sleepaway.png" alt=" ">
+                <span class="songname">Sleep Away</span>
+                <span class="songplay"><span class="time">03:21</span><i id="4" class="sip fa-regular fa-circle-play"></i></span>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <input type="range" name="range" id="progressbar" value="0" min="0" max="100">
+        <div class="icons">
+            <!--<img src="stepback2.png" alt="">
+            <img src="fastback.png" alt="">
+            <img src="play.png" alt="" id="masterplay">
+            <img src="fastforward.png" alt="" class="ff">
+            <img src="stepfront.png" alt=""> -->
+            <i class="fa-solid fa-backward-step" id="previous"></i>
+            <i class="fa-solid fa-backward" id="fastback"></i>
+            <i class="fa-solid fa-2x fa-play" id="masterplay"></i>
+            <i class="fa-solid fa-forward" id="fastfor"></i>
+            <i class="fa-solid fa-forward-step" id="next"></i>
+        </div>
+        <div class="songInfo">
+           <video src="5uwq.mp4" width="72px" id="gif" muted loop></video>
+           <span id="masterSong">Sleep Away</span>
+        </div>
+        <span id="currTime">00:00</span>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/06cb5fa3bc.js" crossorigin="anonymous"></script>
+<script src="music.js"></script>
+</html>

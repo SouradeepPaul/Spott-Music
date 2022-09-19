@@ -1,0 +1,152 @@
+body{
+    background-color: rgba(22, 22, 22,0.8);
+}
+.navbar ul li{
+    float: left;
+    padding:4px;
+    padding-left: 20px;
+    padding-right:20px;
+    list-style: none;
+}
+.navbar{
+    display: flex;
+    width: 100%;
+    height: 52px;
+    z-index: 2;
+    align-items: center;
+    background-color: black;
+    border-radius: 2px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgba(235, 235, 210, 0.897);
+}
+.navbar ul .item:hover{
+    background-color: ghostwhite;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.navbar ul li a:hover{
+    color: slategray;
+}
+.navbar img{
+    margin-left: 10px;
+    height:46px;
+}
+.navbar .searchbar img{
+    height: 20px;
+    display:block;
+    margin-left: auto;
+    filter: invert(100%);
+}
+.navbar .searchbar button{
+    height:20px;
+    width:20px;
+    background-color:transparent;
+    cursor: pointer;
+}
+.navbar input{
+    transition: 0.5s;
+    background-color: transparent;
+    border: none;
+    outline: transparent;
+    border-bottom: 1px solid gray;
+}
+.navbar input:focus{
+    width:400px;
+    color: rgb(165, 159, 159)
+}
+.navbar .profile{
+    display: block;
+    margin-left: auto;
+    margin-right: 35px;
+}
+.navbar .profile img{
+    height: 40px;
+    border-radius: 20px;
+}
+.navbar ul li img{
+    height: 20px;
+}
+.container{
+    min-height: 60vh;
+    display: flex;
+    background-color: black;
+    color: white;
+    margin: 20px auto;
+    width: 75%;
+    padding: 18px;
+    border-radius: 15px;
+    background: url('music_bg.jpg') no-repeat center center/cover;
+}
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: wheat;
+    flex-direction: column;
+}
+.bottom #progressbar{
+    width: 80vw;
+    text-align: center;
+}
+.bottom .icons i{
+    height: 28px;
+    filter: invert(100%);
+    cursor: pointer;
+    margin: 10px;
+}
+.songItem{
+    display: flex;
+    background-color: rgb(251, 171, 105);
+    width: 100%;
+    color: rgb(235, 81, 10);
+    height: 36px;
+    font-weight: bold;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    margin-left: 6px;
+}
+.songItem img{
+    margin-left: 10px;
+    height: 80%;
+    border-radius: 34px;
+}
+.songItem .songname{
+    font-style: oblique;
+    font-variant: small-caps;
+}
+.songItem .songplay i{
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.songItem .songplay .time{
+    font-size: 12px;
+    color: black;
+    margin: 0 14px;
+    margin-right: 10px;
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+}
+.songInfo video{
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+#masterSong{
+    color: rgb(150, 243, 10);
+}
+#currTime{
+    position: absolute;
+    right: 10vw;
+    color: rgb(150, 243, 10);
+}
